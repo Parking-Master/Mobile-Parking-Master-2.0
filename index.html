@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Parking Master 2.0 - Mobile Recreation</title>
+    <style>
+      body {
+        overflow: hidden !important;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe class="view" fetchpriority="high" scrolling="no" style="border:none;outline:none;position:absolute;width:100%;height:100%;margin:0;left:0;top:0;right:0;bottom:0;padding:0;background:#fff;" allowtransparency="true" allowfullscreen="true" src="https://parkingmaster.tk"></iframe>
+    <script>
+      const view = document.querySelector(".view").contentWindow;
+      view.document.head.innerHTML += `
+      <style>
+        div.nav-btn {
+          border-radius: 0 !important;
+        }
+      </style>
+      `;
+    </script>
+  </body>
+</html>
